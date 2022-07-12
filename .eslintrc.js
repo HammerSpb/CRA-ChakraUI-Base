@@ -26,11 +26,15 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', { endOfLine: 'auto' }],
 
+    'react/jsx-props-no-spreading': 'off',
+    'react/function-component-definition': 'off',
+
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
 
     // Import rules settings
-    'import/no-unresolved': 'error', // turn on erros for missing imports
+    'import/no-unresolved': 'error', // turn on errors for missing imports
+    'import/prefer-default-export': 'off',
   },
 
   settings: {
