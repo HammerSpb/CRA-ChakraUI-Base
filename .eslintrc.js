@@ -35,6 +35,7 @@ module.exports = {
     // Import rules settings
     'import/no-unresolved': 'error', // turn on errors for missing imports
     'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 
   settings: {
@@ -48,3 +49,4 @@ module.exports = {
     },
   },
 };
+
