@@ -32,9 +32,6 @@
     "format": "prettier --write src/**/*.ts{,x}",
     "format:check": "prettier --check src/**/*.ts{,x}"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
     "production": [
       ">0.2%",
