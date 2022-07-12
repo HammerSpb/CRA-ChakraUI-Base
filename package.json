@@ -1,6 +1,6 @@
 {
   "name": "raffle",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.2.3",
@@ -25,9 +25,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --reporters=jest-junit --watchAll=false --runInBand",
     "eject": "react-scripts eject",
-    "lint:es": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:es:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:es": "eslint --ext src/**/*.ts{,x}",
+    "lint:es:fix": "eslint --ext src/**/*.ts{,x} --fix",
     "lint:ts": "tsc --noEmit",
     "format": "prettier --write src/**/*.ts{,x}",
     "format:check": "prettier --check src/**/*.ts{,x}"
@@ -61,6 +62,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "jest-junit": "^14.0.0",
     "prettier": "^2.7.1"
   }
 }
