@@ -2,5 +2,3 @@
 /dist
 /examples
 /node_modules
-.eslintrc.js
-prettier.config.js

@@ -12,4 +12,3 @@ module.exports = {
   arrowParens: 'always',
   endOfLine: 'crlf',
 };
-
