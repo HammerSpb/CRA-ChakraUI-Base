@@ -6,9 +6,6 @@
     "@chakra-ui/react": "^2.2.3",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.2.1",
     "@types/jest": "^25.2.3",
     "@types/node": "^12.20.55",
     "@types/react": "^18.0.15",
@@ -50,6 +47,9 @@
     "node": ">=16.0.0 <17"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.1",
     "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.6",
     "eslint": "^8.19.0",
@@ -66,4 +66,3 @@
     "prettier": "^2.7.1"
   }
 }
-
