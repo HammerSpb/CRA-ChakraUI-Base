@@ -12,7 +12,7 @@ export function App() {
           <VStack spacing={8}>
             <Logo h='40vmin' pointerEvents='none' />
             <Text>
-              Edit <Code fontSize='xl'>src/App.tsx</Code> and save to reload.
+              Start Edit <Code fontSize='xl'>src/App.tsx</Code> and save to reload.
             </Text>
             <Link
               color='teal.500'

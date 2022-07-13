@@ -2,3 +2,6 @@
 /dist
 /examples
 /node_modules
+lint-staged.config.js
+prettier.config.js
+tsconfig.json
