@@ -30,7 +30,22 @@
     "lint:es:fix": "eslint --ext src/**/*.ts{,x} --fix",
     "lint:ts": "tsc --noEmit",
     "format": "prettier --write src/**/*.ts{,x}",
-    "format:check": "prettier --check src/**/*.ts{,x}"
+    "format:check": "prettier --check src/**/*.ts{,x}",
+    "pre-commit": "lint-staged",
+    "pre-push": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "lint-staged",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.(ts|tsx)": [
+      "tsc --noEmit",
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
   },
   "browserslist": {
     "production": [
@@ -72,3 +87,4 @@
     "prettier": "^2.7.1"
   }
 }
+
