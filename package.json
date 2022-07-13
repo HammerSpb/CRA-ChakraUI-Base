@@ -19,9 +19,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "prepare": "husky install",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false --runInBand",
+    "test:watch": "react-scripts test --watchAll=true",
     "test:ci": "react-scripts test --reporters=jest-junit --watchAll=false --runInBand",
     "eject": "react-scripts eject",
     "lint:es": "eslint --ext src/**/*.ts{,x}",
@@ -64,7 +66,9 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
     "jest-junit": "^14.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   }
 }
